@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(require("./controllers/PackageController"));
+app.use(require("./controllers/MemberController"));
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port`, port);

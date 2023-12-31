@@ -1,7 +1,7 @@
 const conn = require("../connect");
 const { DataType, DataTypes} = require("sequelize");
 
-const PackageModel = conn.define("packages", {
+const PackageModel = conn.define("package", {
   id: {
     type: DataTypes.BIGINT,
     primaryKey: true,
